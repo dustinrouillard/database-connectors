@@ -1,0 +1,28 @@
+{
+  "name": "@dustinrouillard/database-connectors",
+  "version": "1.0.0",
+  "description": "Database connection library",
+  "author": "Dustin Rouillard <code@dustin.sh>",
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc -w",
+    "dev": "tsc -w",
+    "push": "yarn build; cp -R package.json README.md LICENSE dist; (cd dist && yarn publish --non-interactive); rm -rf dist/package.json dist/README.md dist/LICENSE",
+    "lnk": "yarn build; cp -R package.json README.md LICENSE dist; (cd dist && yarn link)"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@dustinrouillard/fastify-utilities": "^1.0.2",
+    "@types/ioredis": "^4.16.1",
+    "cassandra-driver": "^4.5.2",
+    "ioredis": "^4.16.3",
+    "pg-promise": "^10.5.5"
+  }
+}
