@@ -2,7 +2,7 @@
 
 - Postgres
 - Redis
-- ~~Cassandra~~
+- Cassandra
 
 ## Environment Variables
 
