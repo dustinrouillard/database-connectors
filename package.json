@@ -1,6 +1,6 @@
 {
   "name": "@dustinrouillard/database-connectors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Database connection library",
   "author": "Dustin Rouillard <code@dustin.sh>",
   "scripts": {
@@ -9,9 +9,6 @@
     "dev": "tsc -w",
     "push": "yarn build; cp -R package.json README.md LICENSE dist; (cd dist && yarn publish --non-interactive); rm -rf dist/package.json dist/README.md dist/LICENSE",
     "lnk": "yarn build; cp -R package.json README.md LICENSE dist; (cd dist && yarn link)"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "devDependencies": {
