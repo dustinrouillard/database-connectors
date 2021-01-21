@@ -1,8 +1,6 @@
 import Redis, { RedisOptions, ClusterNode, ClusterStatic } from 'ioredis';
 
-import { Log, Error } from '@dustinrouillard/fastify-utilities/modules/logger';
-
-const RedisConfig = {
+export const RedisConfig = {
   Host: process.env.REDIS_HOST || '127.0.0.1',
   Port: Number(process.env.REDIS_PORT) || 6379,
   Database: Number(process.env.REDIS_DATABASE) || 0,
@@ -23,13 +21,5 @@ if (!RedisConfig.Cluster) RedisOptions = { ...RedisHost, ...RedisOptions };
 let HostOrOptions = RedisConfig.Cluster ? ClusterHost : (RedisOptions as ClusterNode[]);
 let ConfigOrNone = RedisConfig.Cluster ? RedisOptions : undefined;
 
-export const RedisClient = new RedisConstructor(HostOrOptions, ConfigOrNone);
-
-(async () => {
-  try {
-    await RedisClient.connect(() => {});
-    Log(`Connection opened to redis ${RedisConfig.Cluster ? 'cluster' : 'server'} [Database: ${RedisConfig.Database}]`);
-  } catch (error) {
-    Error('Error with the redis database connection', error);
-  }
-})();
+export const CreateConstructor = () => new RedisConstructor(HostOrOptions, ConfigOrNone);
+export const RedisClient = CreateConstructor();
