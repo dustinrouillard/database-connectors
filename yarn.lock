@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@dustinrouillard/fastify-utilities@^1.2.3":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@dustinrouillard/fastify-utilities/-/fastify-utilities-1.2.6.tgz#10e7ff4b6a54e31fc6465c81bc2a268a04db48da"
-  integrity sha512-lwwmqr3teX0PJC0lh6ieHEDMiRPETYJtResm0zmSnbygvPFb/nAh8HXx9FzL0lUJyVWnbBUYA7Z6XFt6xmayMA==
+"@dustinrouillard/fastify-utilities@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@dustinrouillard/fastify-utilities/-/fastify-utilities-1.2.7.tgz#7791e07648591669d6103f3eb1804229be09dd93"
+  integrity sha512-+Vu1PUgvxSbmV8wK5w4WILHKEi9QrKs3UnkuuNlfFAIYzJVu9frwUx3kInVgdLM+QK+AqOwi3Y8tGkpXZndilA==
   dependencies:
     "@types/node-fetch" "^2.5.7"
     chalk "^4.0.0"

@@ -18,7 +18,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@dustinrouillard/fastify-utilities": "^1.2.3",
+    "@dustinrouillard/fastify-utilities": "^1.2.7",
     "cassandra-driver": "^4.5.2",
     "ioredis": "^4.16.3",
     "pg-promise": "^10.5.5"
