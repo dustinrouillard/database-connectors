@@ -1,6 +1,6 @@
 {
   "name": "@dustinrouillard/database-connectors",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Database connection library",
   "author": "Dustin Rouillard <code@dustin.sh>",
   "scripts": {
