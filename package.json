@@ -1,6 +1,6 @@
 {
   "name": "@dustinrouillard/database-connectors",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Database connection library",
   "author": "Dustin Rouillard <code@dustin.sh>",
   "scripts": {
@@ -17,8 +17,8 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@dustinrouillard/fastify-utilities": "^1.2.18",
     "@types/ioredis": "^4.16.1",
-    "@dustinrouillard/fastify-utilities": "^1.2.7",
     "cassandra-driver": "^4.5.2",
     "ioredis": "^4.16.3",
     "pg-promise": "^10.5.5"
